@@ -5,3 +5,7 @@ html
   body
     .output JavaScript
     button Click
+    script
+      include script.js
+    if config.entry.css.external
+      link(rel="stylesheet", href=`${baseUrl}style.css`)
