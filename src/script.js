@@ -103,7 +103,8 @@ function checkIt(num) {
   }
 }*/
 
-function checkIt(val) {
+//                    switch statement
+/*function checkIt(val) {
   console.log(val);
   switch(val) {
     case 1:
@@ -127,6 +128,23 @@ function checkIt(val) {
 
 function message(mess) {
   document.querySelector('h1').innerHTML = mess
+}*/
+
+//                Loops
+
+var array = [ 1, 3, 4, 5, 6, 5, 7, 7, 1, 100];
+for(x = 0; x < array.length; x++) {
+  console.log(array[x])
+}
+
+var object = {
+  firstName: "Robert",
+  lastName: "Alexandru",
+  doingDrugs: "Hell No",
+  codingHard: "Hell Yes"
+}
+for( var x in object) {
+  console.log(x + ' ' + object[x])
 }
 
 
