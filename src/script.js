@@ -80,13 +80,31 @@ console.log(myArray);*/
 //                    Condition statement
 
 var num = 15;
-
+/*
 if (num !== 14 && num > 20) {
   console.log('You know that your true')
 } else if (num === 15 || num <20) {
   console.log('It is equal') 
 } else {
   console.log('Go to sleep')
+}*/
+
+//         Conditional statement combined with function
+
+var num1 = 10;
+function checkIt(num) {
+  message(num);
+  if(num > num1){
+    message(num + ' I think was more then ' + num1);
+  } else if(num === num1){
+    message(num + ' is strictly equal to ' + num);
+  } else {
+    message(num + ' definetly was less then ' + num1)
+  }
+}
+
+function message(mess) {
+  document.querySelector('h1').innerHTML = mess
 }
 
 
