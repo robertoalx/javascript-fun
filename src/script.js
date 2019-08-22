@@ -79,8 +79,8 @@ console.log(myArray);*/
 
 //                    Condition statement
 
-var num = 15;
-/*
+/*var num = 15;
+
 if (num !== 14 && num > 20) {
   console.log('You know that your true')
 } else if (num === 15 || num <20) {
@@ -91,7 +91,7 @@ if (num !== 14 && num > 20) {
 
 //         Conditional statement combined with function
 
-var num1 = 10;
+/*var num1 = 10;
 function checkIt(num) {
   message(num);
   if(num > num1){
@@ -100,6 +100,28 @@ function checkIt(num) {
     message(num + ' is strictly equal to ' + num);
   } else {
     message(num + ' definetly was less then ' + num1)
+  }
+}*/
+
+function checkIt(val) {
+  console.log(val);
+  switch(val) {
+    case 1:
+    case 2:
+    case 3:
+      message('Is a number');
+      break;
+    case true:
+    case false:
+      message('This is a bolean');
+      break;
+    case 'Hello':
+    case 'Second Hello':
+    case 'Third Hello':
+      message('This is a String');
+      break;
+    default:
+      message('What you selected is not a number or a bolean or a string');
   }
 }
 
