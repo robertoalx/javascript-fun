@@ -132,7 +132,7 @@ function message(mess) {
 
 //                Loops
 
-var array = [ 1, 3, 4, 5, 6, 5, 7, 7, 1, 100];
+/*var array = [ 1, 3, 4, 5, 6, 5, 7, 7, 1, 100];
 for(x = 0; x < array.length; x++) {
   console.log(array[x])
 }
@@ -145,6 +145,30 @@ var object = {
 }
 for( var x in object) {
   console.log(x + ' ' + object[x])
+}*/
+
+var myStr = "Hello Hello Guyssss one two ten  Hello Hello"
+console.log(myStr.length)
+var word = myStr.indexOf('Hello');
+console.log(word);
+var wordLast = myStr.lastIndexOf('Hello');
+console.log(wordLast);
+var wordFind = myStr.indexOf('Hello', 20);
+console.log(wordFind);
+var wordSearch = myStr.search('one');
+console.log(wordSearch);
+
+function checkIt(val) {
+  var checkVal = myStr.indexOf(val)
+  if(checkVal < 0) {
+    message("Didn't find it :O ");
+  } else {
+    message('Found it at ' + checkVal + ' position in the string')
+  }
+}
+
+function message(mess) {
+  document.querySelector('h1').innerHTML = mess
 }
 
 
