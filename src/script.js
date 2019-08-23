@@ -147,7 +147,11 @@ for( var x in object) {
   console.log(x + ' ' + object[x])
 }*/
 
-var myStr = "Hello Hello Guyssss one two ten  Hello Hello"
+
+//                   string methods
+
+
+/*var myStr = "Hello Hello Guyssss one two ten  Hello Hello"
 console.log(myStr.length)
 var word = myStr.indexOf('Hello');
 console.log(word);
@@ -169,8 +173,24 @@ function checkIt(val) {
 
 function message(mess) {
   document.querySelector('h1').innerHTML = mess
+}*/
+
+//                    document object
+
+const element = document.querySelector('h1')
+
+function message() {
+  let myEle = document.getElementById('myPersonalInput')
+  output(myEle.value)
 }
 
+function output(mess) {
+  element.innerHTML = mess;
+}
+
+// function update() {
+//   document.querySelector('h1').innerHTML = message;
+// }
 
 // console.dir(document); //is helping you to see detailed document in the browser console.
 // console.log('hey');
