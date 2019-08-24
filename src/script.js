@@ -177,7 +177,7 @@ function message(mess) {
 
 //                    document object
 
-const element = document.querySelector('h1')
+/*const element = document.querySelector('h1')
 
 function message() {
   let myEle = document.getElementById('myPersonalInput')
@@ -186,6 +186,27 @@ function message() {
 
 function output(mess) {
   element.innerHTML = mess;
+}*/
+
+//               
+
+const output = document.getElementById('output');
+const ourBtn = document.getElementById('useBtn');
+ourBtn.addEventListener('click', checkVal);
+
+function checkVal() {
+  let val = document.querySelector('input[name="ourNum"]').value;
+  output.innerHTML = numCheck(val);
+}
+
+function numCheck(num) {
+  let message;
+  if( num % 2) {
+    message =  "It is ODD"
+  } else {
+    message = "It is EVEN";
+  }
+  return message;
 }
 
 // function update() {
