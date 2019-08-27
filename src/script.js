@@ -190,7 +190,7 @@ function output(mess) {
 
 //               
 
-const output = document.getElementById('output');
+/*const output = document.getElementById('output');
 const ourBtn = document.getElementById('useBtn');
 ourBtn.addEventListener('click', checkVal);
 
@@ -207,7 +207,12 @@ function numCheck(num) {
     message = "It is EVEN";
   }
   return message;
-}
+}*/
+
+//             Apply the test() method to see if is true or false 
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString)
 
 // function update() {
 //   document.querySelector('h1').innerHTML = message;
