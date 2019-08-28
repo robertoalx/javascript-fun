@@ -210,9 +210,11 @@ function numCheck(num) {
 }*/
 
 //             Apply the test() method to see if is true or false 
-let myString = "Hello, World!";
+/*let myString = "Hello, World!";
 let myRegex = /Hello/;
-let result = myRegex.test(myString)
+let result = myRegex.test(myString)*/
+
+
 
 // function update() {
 //   document.querySelector('h1').innerHTML = message;
@@ -231,3 +233,11 @@ let result = myRegex.test(myString)
 var b = "Hello";
 var c = b + ' ' + a;
 console.log (c)*/ // In the browser console we can use typeOf a and will say if is a string, number or bolean
+
+//                 How old will you be in 2050?
+
+//  1. Prompt the user to provide they first name and store it in a variable firstname .
+
+var firstName = prompt('Your first name:');
+
+
