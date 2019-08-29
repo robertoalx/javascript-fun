@@ -240,4 +240,8 @@ console.log (c)*/ // In the browser console we can use typeOf a and will say if 
 
 var firstName = prompt('Your first name:');
 
+//  2. Prompt the user to provide they last name and store it in a variable lastname .
+
+var lastName = prompt('Your last name:');
+
 
