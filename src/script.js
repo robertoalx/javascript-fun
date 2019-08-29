@@ -253,3 +253,17 @@ year = parseInt(year);
 //  4. Create a variable sentence 1 staring: Hello firstname lastname.
 
 var sentence1 = "Hello " + firstName + " " + lastName + ".";
+
+//  5. Calculate the user age in 2050 and store in a variable: futureAge
+
+var futureAge = 2050 - year;
+
+//  6. Create a variable sentence 2 staring: Your age in 2050 will be: futureAge
+
+var sentence2 = "Your age in 2050 will be: " + futureAge;
+
+// 7. Store the two sentences above in a variable result. Separated them using a line break.
+
+var result = sentence1 + '\n' + sentence2;
+
+
