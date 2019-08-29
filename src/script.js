@@ -244,4 +244,12 @@ var firstName = prompt('Your first name:');
 
 var lastName = prompt('Your last name:');
 
+//  3. Prompt the user to provide theyr year of birth and store it in a variable year as a number .
 
+var year = prompt('Please insert your year of birth:');
+
+year = parseInt(year);
+
+//  4. Create a variable sentence 1 staring: Hello firstname lastname.
+
+var sentence1 = "Hello " + firstName + " " + lastName + ".";
