@@ -266,4 +266,8 @@ var sentence2 = "Your age in 2050 will be: " + futureAge;
 
 var result = sentence1 + '\n' + sentence2;
 
+// 8. Using the += operator, add the following sentence to the result variable starting with a line break: I wish you a long life full of success!
 
+result += "\nI wish you a long life full of success!"
+
+console.log(result);
