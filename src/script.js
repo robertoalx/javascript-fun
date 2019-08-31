@@ -234,11 +234,17 @@ var b = "Hello";
 var c = b + ' ' + a;
 console.log (c)*/ // In the browser console we can use typeOf a and will say if is a string, number or bolean
 
+//                                Match a Literal String with Different Possibilities
+
+let petString = "Roberto bird as a pet and a cat.";
+let petRegex = /dog|cat|bird|spider/; 
+let result = petRegex.test(petString);
+
 //                 How old will you be in 2050?
 
 //  1. Prompt the user to provide they first name and store it in a variable firstname .
 
-var firstName = prompt('Your first name:');
+/*var firstName = prompt('Your first name:');
 
 //  2. Prompt the user to provide they last name and store it in a variable lastname .
 
@@ -270,4 +276,4 @@ var result = sentence1 + '\n' + sentence2;
 
 result += "\nI wish you a long life full of success!"
 
-console.log(result);
+console.log(result);*/
