@@ -236,9 +236,9 @@ console.log (c)*/ // In the browser console we can use typeOf a and will say if 
 
 //                                Match a Literal String with Different Possibilities
 
-let petString = "Roberto bird as a pet and a cat.";
-let petRegex = /dog|cat|bird|spider/; 
-let result = petRegex.test(petString);
+// let petString = "Roberto bird as a pet and a cat.";
+// let petRegex = /dog|cat|bird|spider/; 
+// let result = petRegex.test(petString);
 
 //                 How old will you be in 2050?
 
@@ -277,3 +277,31 @@ var result = sentence1 + '\n' + sentence2;
 result += "\nI wish you a long life full of success!"
 
 console.log(result);*/
+
+
+let userInput = prompt("Please specify your desire computer component. You can choose from: procesor, memory-ram, graphic-card, motherboard, keyboard");
+userInput = userInput.toLowerCase();
+
+switch(userInput) {
+  case "procesor":
+    console.log("The many advantages of 10th Gen Intel® Core™ mobile processors are almost here — built-in AI, integrated Thunderbolt™ 3 technology and Intel® Wi-Fi 6, 4K HDR, and more. Featuring new CPU and GPU architectures produced on Intel’s advanced 10nm process.");
+    break;
+  case "memory-ram":
+    console.log("CORSAIR Vengeance LPX - DIMM 288-pin");
+    break;
+  case "graphic-card":
+    console.log("GeForce® GTX 1080 G1 Gaming 8G");
+    break;
+  case "motherboard":
+    console.log("Gigabyte Z390 AORUS PRO LGA 1151 DDR4 ATX Motherboard");
+    break;
+  case "keyboard":
+    console.log("Razer Blackwidow Chroma Mechanical Keyboard");
+    break;
+  case "mouse":
+    console.log("Razer Deathadder Elite: True 16.000 5G Optical Sensor - Razer Mechanical Mouse Switches (Up To 50 Million Clicks) - Esports Gaming Mouse");
+    break;
+  default:
+    console.log("This is not a computer component");
+}
+
