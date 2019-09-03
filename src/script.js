@@ -173,15 +173,15 @@ function checkIt(val) {
 
 function message(mess) {
   document.querySelector('h1').innerHTML = mess
-}*/
+};*/
 
 //                    document object
 
-/*const element = document.querySelector('h1')
+/*const element = document.querySelector('h1');
 
 function message() {
-  let myEle = document.getElementById('myPersonalInput')
-  output(myEle.value)
+  let myEle = document.getElementById('myPersonalInput');
+  output(myEle.value);
 }
 
 function output(mess) {
@@ -202,7 +202,7 @@ function checkVal() {
 function numCheck(num) {
   let message;
   if( num % 2) {
-    message =  "It is ODD"
+    message =  "It is ODD";
   } else {
     message = "It is EVEN";
   }
@@ -218,7 +218,7 @@ let result = myRegex.test(myString)*/
 
 // function update() {
 //   document.querySelector('h1').innerHTML = message;
-// }
+// };
 
 // console.dir(document); //is helping you to see detailed document in the browser console.
 // console.log('hey');
@@ -232,7 +232,7 @@ let result = myRegex.test(myString)*/
 /*var a = "World";
 var b = "Hello";
 var c = b + ' ' + a;
-console.log (c)*/ // In the browser console we can use typeOf a and will say if is a string, number or bolean
+console.log (c);*/ // In the browser console we can use typeOf a and will say if is a string, number or bolean
 
 //                                Match a Literal String with Different Possibilities
 
@@ -260,21 +260,21 @@ year = parseInt(year);
 
 var sentence1 = "Hello " + firstName + " " + lastName + ".";
 
-//  5. Calculate the user age in 2050 and store in a variable: futureAge
+//  5. Calculate the user age in 2050 and store in a variable: futureAge;
 
 var futureAge = 2050 - year;
 
-//  6. Create a variable sentence 2 staring: Your age in 2050 will be: futureAge
+//  6. Create a variable sentence 2 staring: Your age in 2050 will be: futureAge;
 
 var sentence2 = "Your age in 2050 will be: " + futureAge;
 
-// 7. Store the two sentences above in a variable result. Separated them using a line break.
+// 7. Store the two sentences above in a variable result. Separated them using a line break.;
 
 var result = sentence1 + '\n' + sentence2;
 
-// 8. Using the += operator, add the following sentence to the result variable starting with a line break: I wish you a long life full of success!
+// 8. Using the += operator, add the following sentence to the result variable starting with a line break: I wish you a long life full of success!;
 
-result += "\nI wish you a long life full of success!"
+result += "\nI wish you a long life full of success!";
 
 console.log(result);*/
 
