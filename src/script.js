@@ -317,8 +317,8 @@ let store1 = {
 let store2 = {
   name: "Curis",
   price: 950,
-  distance 3.7
-}
+  distance: 3.7
+};
 let store3 = {
   name: "Amazon",
   price: 935,
@@ -340,3 +340,6 @@ let store6 = {
   distance: 1.5
 };
 
+//  2. create an new variable store and add all variables stores into an array
+let store = [store1, store2, store3, store4, store5, store6];
+console.log(store)
