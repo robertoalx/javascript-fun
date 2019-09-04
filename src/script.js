@@ -279,29 +279,64 @@ result += "\nI wish you a long life full of success!";
 console.log(result);*/
 
 
-let userInput = prompt("Please specify your desire computer component. You can choose from: procesor, memory-ram, graphic-card, motherboard, keyboard");
-userInput = userInput.toLowerCase();
+// let userInput = prompt("Please specify your desire computer component. You can choose from: procesor, memory-ram, graphic-card, motherboard, keyboard");
+// userInput = userInput.toLowerCase();
 
-switch(userInput) {
-  case "procesor":
-    console.log("The many advantages of 10th Gen Intel® Core™ mobile processors are almost here — built-in AI, integrated Thunderbolt™ 3 technology and Intel® Wi-Fi 6, 4K HDR, and more. Featuring new CPU and GPU architectures produced on Intel’s advanced 10nm process.");
-    break;
-  case "memory-ram":
-    console.log("CORSAIR Vengeance LPX - DIMM 288-pin");
-    break;
-  case "graphic-card":
-    console.log("GeForce® GTX 1080 G1 Gaming 8G");
-    break;
-  case "motherboard":
-    console.log("Gigabyte Z390 AORUS PRO LGA 1151 DDR4 ATX Motherboard");
-    break;
-  case "keyboard":
-    console.log("Razer Blackwidow Chroma Mechanical Keyboard");
-    break;
-  case "mouse":
-    console.log("Razer Deathadder Elite: True 16.000 5G Optical Sensor - Razer Mechanical Mouse Switches (Up To 50 Million Clicks) - Esports Gaming Mouse");
-    break;
-  default:
-    console.log("This is not a computer component");
+// switch(userInput) {
+//   case "procesor":
+//     console.log("The many advantages of 10th Gen Intel® Core™ mobile processors are almost here — built-in AI, integrated Thunderbolt™ 3 technology and Intel® Wi-Fi 6, 4K HDR, and more. Featuring new CPU and GPU architectures produced on Intel’s advanced 10nm process.");
+//     break;
+//   case "memory-ram":
+//     console.log("CORSAIR Vengeance LPX - DIMM 288-pin");
+//     break;
+//   case "graphic-card":
+//     console.log("GeForce® GTX 1080 G1 Gaming 8G");
+//     break;
+//   case "motherboard":
+//     console.log("Gigabyte Z390 AORUS PRO LGA 1151 DDR4 ATX Motherboard");
+//     break;
+//   case "keyboard":
+//     console.log("Razer Blackwidow Chroma Mechanical Keyboard");
+//     break;
+//   case "mouse":
+//     console.log("Razer Deathadder Elite: True 16.000 5G Optical Sensor - Razer Mechanical Mouse Switches (Up To 50 Million Clicks) - Esports Gaming Mouse");
+//     break;
+//   default:
+//     console.log("This is not a computer component");
+// }
+
+//      You want to buy your computer, and don't know any shop? Let me help you.
+
+//  1. create six objects(store1, store2...store6)  storing the name, price, and distance from your location to your prefered store
+
+let store1 = {
+  name: "Argos",
+  price: 1000,
+  distance: 6.8
+};
+let store2 = {
+  name: "Curis",
+  price: 950,
+  distance 3.7
 }
+let store3 = {
+  name: "Amazon",
+  price: 935,
+  distance: 2.8
+};
+let store4 = {
+  name: "Epsilom Computers",
+  price: 1300,
+  distance: 4.8
+};
+let store5 = {
+  name: "Arbico Computers",
+  price: 1500,
+  distance: 5.5
+};
+let store6 = {
+  name: "PC Point",
+  price: 1100,
+  distance: 1.5
+};
 
