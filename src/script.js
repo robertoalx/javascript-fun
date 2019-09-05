@@ -341,5 +341,17 @@ let store6 = {
 };
 
 //  2. create an new variable store and add all variables stores into an array
+
 let store = [store1, store2, store3, store4, store5, store6];
-console.log(store)
+// console.log(store)
+
+//  3.create the result variable with the Message "Here is a list with the stores that have your computer in stock"
+
+let result = "Here is a list with the stores that have your computer in stock:";
+
+//  4. Make use of FOR statement to print the stores in console.log with a line break the message should be This store: store.name , got this price per unit: store.price, and is not so far from your location: store.distance. miles.
+
+for(x = 0; x < store.length; x++) {
+  result += "\nThis store: " + store[x].name+  ", got this price per unit: " + store[x].price + ", and is not so far from your location: " + store[x].distance +" miles.";
+}
+console.log(result)
