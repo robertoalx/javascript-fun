@@ -366,10 +366,24 @@ distance = parseFloat(distance);
 // reset result to an empty array. Using a for statement, loop though the list of the stores. IF the store is witihin the user budget and maximum distance from his location add a sentence with a line break and containing store details to the result variable.
 
 result = "";
-
+counting = 0;
 for(x = 0; x < store.length; x++) {
   if(store[x].price <= budget && store[x].distance <= distance){
+    counting++;
     result += "\nThis store: " + store[x].name+  ", got this price per unit: " + store[x].price + ", and is not so far from your location: " + store[x].distance +" miles.";
   }
+}
+// console.log(result);
+
+//  if there are not stores matching the search set the result to "Sorry, we've got no available stores for you".
+// If there is only one store "Got only 1 store that having your perfect matching"
+// or there are 2 stores "There are 2 stores that  having your perfect matching"
+
+if(counting === 0){
+  result = "Sorry, we've got no available stores for you."
+}else if(counting === 1){
+  result = "Got only " + counting +" store that having your perfect matching." + result;
+}else{
+  result = "There are " + counting + " stores that having your perfect matching" + result;
 }
 console.log(result);
