@@ -355,3 +355,10 @@ for(x = 0; x < store.length; x++) {
   result += "\nThis store: " + store[x].name+  ", got this price per unit: " + store[x].price + ", and is not so far from your location: " + store[x].distance +" miles.";
 }
 console.log(result)
+
+// 5. prompt the user to enter their budger (make a variable moneySpent) make use of parseFloat
+let moneySpent = prompt("Please let us know how much money you want to spend on your new computer:");
+moneySpent = parseFloat(moneySpent);
+// 6. prompt the user to enter the maximum distance and store it into a variable and make use of parseFloat
+let distance = prompt("Please let us know how far you want to walk or drive to the nearest and available store:");
+distance = parseFloat(distance);
