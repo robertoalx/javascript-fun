@@ -354,11 +354,22 @@ let result = "Here is a list with the stores that have your computer in stock:";
 for(x = 0; x < store.length; x++) {
   result += "\nThis store: " + store[x].name+  ", got this price per unit: " + store[x].price + ", and is not so far from your location: " + store[x].distance +" miles.";
 }
-console.log(result)
+// console.log(result)
 
-// 5. prompt the user to enter their budger (make a variable moneySpent) make use of parseFloat
-let moneySpent = prompt("Please let us know how much money you want to spend on your new computer:");
-moneySpent = parseFloat(moneySpent);
+// 5. prompt the user to enter their budger (make a variable budget) make use of parseFloat
+let budget = prompt("Please let us know how much money you want to spend on your new computer:");
+budget = parseFloat(budget);
 // 6. prompt the user to enter the maximum distance and store it into a variable and make use of parseFloat
 let distance = prompt("Please let us know how far you want to walk or drive to the nearest and available store:");
 distance = parseFloat(distance);
+
+// reset result to an empty array. Using a for statement, loop though the list of the stores. IF the store is witihin the user budget and maximum distance from his location add a sentence with a line break and containing store details to the result variable.
+
+result = "";
+
+for(x = 0; x < store.length; x++) {
+  if(store[x].price <= budget && store[x].distance <= distance){
+    result += "\nThis store: " + store[x].name+  ", got this price per unit: " + store[x].price + ", and is not so far from your location: " + store[x].distance +" miles.";
+  }
+}
+console.log(result);
