@@ -379,11 +379,14 @@ for(x = 0; x < store.length; x++) {
 // If there is only one store "Got only 1 store that having your perfect matching"
 // or there are 2 stores "There are 2 stores that  having your perfect matching"
 
-if(counting === 0){
-  result = "Sorry, we've got no available stores for you."
-}else if(counting === 1){
-  result = "Got only " + counting +" store that having your perfect matching." + result;
-}else{
-  result = "There are " + counting + " stores that having your perfect matching" + result;
-}
+// if(counting === 0){
+//   result = "Sorry, we've got no available stores for you."
+// }else if(counting === 1){
+//   result = "Got only " + counting +" store that having your perfect matching." + result;
+// }else{
+//   result = "There are " + counting + " stores that having your perfect matching" + result;
+// }
+
+counting = counting === 0 ? result = "Sorry, we've got no available stores for you." : counting === 1 ? "Got only " + counting +" store that having your perfect matching." + result : result = "There are " + counting + " stores that having your perfect matching" + result; 
+
 console.log(result);
