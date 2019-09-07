@@ -337,7 +337,22 @@ let store5 = {
 let store6 = {
   name: "PC Point",
   price: 1100,
-  distance: 1.5
+  distance: 1.9
+};
+let store7 = {
+  name: "Cyberpower UK",
+  price: 2100,
+  distance: 2.5
+};
+let store8 = {
+  name: "Freshtech Solutions",
+  price: 1700,
+  distance: 5.2
+};
+let store6 = {
+  name: "AWD-IT",
+  price: 3500,
+  distance: 3
 };
 
 //  2. create an new variable store and add all variables stores into an array
