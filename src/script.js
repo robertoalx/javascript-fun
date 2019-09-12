@@ -309,7 +309,7 @@ console.log(result);*/
 
 //  1. create six objects(store1, store2...store6)  storing the name, price, and distance from your location to your prefered store
 
-let store1 = {
+/*let store1 = {
   name: "Argos",
   price: 1000,
   distance: 6.8
@@ -349,7 +349,7 @@ let store8 = {
   price: 1700,
   distance: 5.2
 };
-let store6 = {
+let store9 = {
   name: "AWD-IT",
   price: 3500,
   distance: 3
@@ -404,4 +404,8 @@ for(x = 0; x < store.length; x++) {
 
 counting = counting === 0 ? result = "Sorry, we've got no available stores for you." : counting === 1 ? "Got only " + counting +" store that having your perfect matching." + result : result = "There are " + counting + " stores that having your perfect matching" + result; 
 
-console.log(result);
+console.log(result);*/
+
+//create a variable totalVotes and assignet to 0 
+
+let totalVotes = 0;
