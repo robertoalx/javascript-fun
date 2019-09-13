@@ -409,3 +409,14 @@ console.log(result);*/
 //create a variable totalVotes and assignet to 0 
 
 let totalVotes = 0;
+
+let player = [
+{
+  name: "Bianca Andreescu",
+  vote: 0
+},
+{
+  name: "Serena Williams",
+  vote: 0
+}
+]
