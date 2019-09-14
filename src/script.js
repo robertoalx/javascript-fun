@@ -420,3 +420,9 @@ let player = [
   vote: 0
 }
 ]
+
+// create function countVote witch takes as a parameter "player". pass a value by reference.
+function countVote(player){
+  player.vote ++;
+  totalVotes++;
+}
