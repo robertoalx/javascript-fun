@@ -426,3 +426,14 @@ function countVote(player){
   player.vote ++;
   totalVotes++;
 }
+
+// create a programe 'while' the number of votes has not reached 10. If the client type 1, the vote is going to Bianca Andreescu. If they type 2 the vote is going to  Serena Williams
+while(totalVotes < 10) {
+  let choice = prompt("To vote 	Bianca Andreescu type 1. To vote Serena Williams type 2.")
+
+  if(choice === '1'){
+    vote(player[0]);
+  }else if(choice === '2') {
+    vote(player[1]);
+  }
+}
