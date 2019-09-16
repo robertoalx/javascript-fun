@@ -440,3 +440,20 @@ while(totalVotes < 10) {
   }
 }
 
+/* Once the number of votes reaches 10, print into console (as an upgrade next I will print it in the browser itself) depending on distribution of votes:
+Results:
+Bianca Andreescu: 7 votes;
+Serena Williams: 4 votes;
+If first tennis girl is favorite to win print "'her name' is favorite to win" or if is equal write: "no favorite to win this year!". */
+
+console.log("Results:");
+console.log(player[0].name + ": " + player[0].vote + " votes.");
+console.log(player[1].name + ": " + player[1].vote + " votes");
+
+if(player[0].vote > player[1].vote){
+  console.log(player[0].name + " is favorite to win");
+}else if(player[0].vote < player[1].vote){
+  console.log(player[1].name + " is favorite to win");
+}else {
+  console.log("No favorite to win this year!");
+};
